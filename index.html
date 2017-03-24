@@ -3,15 +3,22 @@ A:link {color: blue}
 A:visited {color: gold}
 A:active {color: gray}
 A:hover {color: deeppink}
-
-#rolling{
-   -webkit-transform:rotate(3.14159rad);
-   transform:rotate(3.14159rad);
-   -webkit-transition: 120ms;
-   transition: 120ms;
-}
 </style>
 <body background="https://images2.alphacoders.com/728/thumb-1920-728105.png">
+.rolling{
+	-webkit-animation: loading 5s infinite linear;
+	-moz-animation: loading 5s infinite linear;
+	-o-animation: loading 5s infinite linear;
+	animation: loading 5s infinite linear;
+}
+@pic-rolling{
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
 <style>
   .title{
     color:tomato;
