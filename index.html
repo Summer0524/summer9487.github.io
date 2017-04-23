@@ -5,6 +5,7 @@
     function aniloop(){
       $("img").animate( {rotation: 288000}, { duration: 144000, step: function(now, fx) { $("img").css({"transform": "rotate("+now+"deg)"}); } } );
     }
+    aniloop();
     $("#hide1").hide();
     $("#hide2").hide();
     $("#hide3").hide();
