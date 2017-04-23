@@ -6,14 +6,14 @@
       $("img").animate( {rotation: 288000}, { duration: 144000, step: function(now, fx) { $("img").css({"transform": "rotate("+now+"deg)"}); } } );
     }
     aniloop();
-    $("#hide1").hide();
-    $("#hide2").hide();
-    $("#hide3").hide();
-    $("#hide4").hide();
-    $("t1").click(function() {$("#hide1").show("slow");});
-    $("t2").click(function() {$("#hide2").show("slow");});
-    $("t3").click(function() {$("#hide3").show("slow");});
-    $("t4").click(function() {$("#hide4").show("slow");});
+    $("#hide1").fadeTo("slow",0.00);
+    $("#hide2").fadeTo("slow",0.00);
+    $("#hide3").fadeTo("slow",0.00);
+    $("#hide4").fadeTo("slow",0.00);
+    $("t1").click(function() {$("#hide1").fadeTo("slow", 0.90);});
+    $("t2").click(function() {$("#hide2").fadeTo("slow", 0.90);});
+    $("t3").click(function() {$("#hide3").fadeTo("slow", 0.90);});
+    $("t4").click(function() {$("#hide4").fadeTo("slow", 0.90);});
   });
 </script>
 <style>
@@ -67,7 +67,7 @@ li:hover{color:yellow}
 
 <p align=center style="color:lightskyblue; font-size: 50px;"><b><i>陳煦</i></b></p>
   
-<b><t1 class=title><font face="標楷體">簡介:</font></t1></b><br><br>
+<b><t1 class=title><font face="標楷體">簡介</font></t1></b><br><br>
 <div class=first>
 <font face="微軟正黑體">
 <s2 id="hide1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新北市輔仁大學資訊工程學系</s2>
@@ -75,12 +75,12 @@ li:hover{color:yellow}
 </div>
 <br>
 
-<b><t2 class=title><font face="標楷體">星座:</font></t2></b><br><br>
+<b><t2 class=title><font face="標楷體">星座</font></t2></b><br><br>
 <font face="微軟正黑體">
 <s1 class=second id="hide2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;雙子座</s1><br><br>
 </font>
 
-<b><t3 class=title><font face="標楷體">興趣:</font></t3></b>
+<b><t3 class=title><font face="標楷體">興趣</font></t3></b>
 <div class=third>
 <font face="微軟正黑體">
 <ol id="hide3">
@@ -92,7 +92,7 @@ li:hover{color:yellow}
 </div>
 <br>
 
-<b><t4 class=title><font face="標楷體">連結:</font></t4></b><br><br>
+<b><t4 class=title><font face="標楷體">連結</font></t4></b><br><br>
 <div class=fourth id="hide4">
 <font face="Comic Sans MS">
 <s1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/%E7%85%A6-%E9%99%B3-5224a7ab/">LinkedIn</a></s1><br>
