@@ -1,11 +1,8 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
-  $(document).ready(function() {
-    setInterval(abcd, 500);
+  $(document).click(function() {
+    $("img").stop().animate( {rotation: 360}, { duration: 500, step: function(now, fx) { $(this).css({"transform": "rotate("+now+"deg)"}); } } );
   });
-  function abcd(){
-    $("img").addClass("animated bounce");
-  }
 </script>
 <style>
 A:link {color: blue}
