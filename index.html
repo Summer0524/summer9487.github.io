@@ -6,10 +6,10 @@
       $("img").animate( {rotation: 2880000}, { duration: 1440000, step: function(now, fx) { $("img").css({"transform": "rotate("+now+"deg)"}); } } );
     }
     aniloop();
-    $("#hide1").fadeTo("slow",0.00);
-    $("#hide2").fadeTo("slow",0.00);
-    $("#hide3").fadeTo("slow",0.00);
-    $("#hide4").fadeTo("slow",0.00);
+    $("#hide1").fadeTo("fast",0.00);
+    $("#hide2").fadeTo("fast",0.00);
+    $("#hide3").fadeTo("fast",0.00);
+    $("#hide4").fadeTo("fast",0.00);
     $("t1").click(function() {$("#hide1").fadeTo("slow", 0.90);});
     $("t2").click(function() {$("#hide2").fadeTo("slow", 0.90);});
     $("t3").click(function() {$("#hide3").fadeTo("slow", 0.90);});
