@@ -2,7 +2,7 @@
 <script type="text/javascript">
   $(function() {
     function aniloop(){
-      $("img").stop().animate( {rotation: 360}, { duration: 500, step: function(now, fx) { $(this).css({"transform": "rotate("+now+"deg)"}); } } );
+      $("img").animate( {rotation: 360}, { duration: 500, step: function(now, fx) { $(this).css({"transform": "rotate("+now+"deg)"}); } } );
     }
     
     setInterval(function(){
