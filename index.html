@@ -1,10 +1,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
-  $(function() {
+  $(document).ready(function() {
     function aniloop(){
-      $("img").animate( {rotation: 360}, { duration: 500, step: function(now, fx) { $(this).css({"transform": "rotate("+now+"deg)"}); } } );
+      $("img").animate( {rotation: 360}, { duration: 500, step: function(now, fx) { $("img").css({"transform": "rotate("+now+"deg)"}); } } );
     }
-    
     setInterval(function(){
       aniloop();
     }, 1000);
