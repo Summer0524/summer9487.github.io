@@ -1,9 +1,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script>
-  $("img").click(function() {
-    setInterval(function aniloop(){
-    $("img").stop().animate( {rotation: 360}, { duration: 500, step: function(now, fx) { $(this).css({"transform": "rotate("+now+"deg)"}); } } );
-  }, 1000);
+<script type="text/javascript">
+  $(function() {
+    function aniloop(){
+      $("img").stop().animate( {rotation: 360}, { duration: 500, step: function(now, fx) { $(this).css({"transform": "rotate("+now+"deg)"}); } } );
+    }
+    
+    setInterval(function(){
+      aniloop();
+    }, 1000);
   });
 </script>
 <style>
